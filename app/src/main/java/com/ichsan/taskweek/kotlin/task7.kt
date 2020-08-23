@@ -5,12 +5,12 @@ fun kabisat(t: Int) {
        println ("kabisat")
     } else
     if (t % 100 == 0) {
-        println ("bukan")
+        println ("bukan kabisat")
     } else
     if (t % 4 == 0) {
        println ("kabisat")
     } else {
-        println ("bukan")
+        println ("bukan kabisat")
     }
 
 }
