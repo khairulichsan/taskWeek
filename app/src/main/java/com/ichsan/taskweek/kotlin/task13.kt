@@ -1,11 +1,21 @@
 package com.ichsan.taskweek.kotlin
 
-fun main(){
-val string = "12340567"
-    var p = 0
-val numbers = string.split("0").map { it.toInt() }
-    for(harga in numbers){
-        p = p + harga
+fun deret(t: String){
+    val numbers = t.split("0")
+    var wadah = ""
+    for (i in numbers.indices) {
+        wadah += numbers[i]
     }
-println(p)
+    val tampil : Int = wadah.toInt()
+
+    println(tampil)
+}
+
+fun main(){
+    var deret = readLine()!!.toInt()
+    var nilai : String = deret.toString()
+    var hasil = deret(nilai)
+    println(hasil)
+
+
 }
