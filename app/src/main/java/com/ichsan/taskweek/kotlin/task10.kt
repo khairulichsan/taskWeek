@@ -13,6 +13,7 @@ fun main(){
             || e == 'A' || e == 'E' || e == 'I' || e == 'O' || e == 'U')
         {vokal += e} else {kons += e}
     }
+
     var gabung = vokal + kons
     for (f in gabung){
     println(f)
