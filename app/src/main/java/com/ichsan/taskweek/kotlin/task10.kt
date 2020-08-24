@@ -4,20 +4,18 @@ fun main(){
     var printWord = readLine()!!.toString()
 
     var b = printWord.toCharArray()
-
+    var vokal = ""
+    var kons = ""
 
 
     for (e in b) {
         if ( e == 'a' || e == 'e' || e == 'i' || e == 'o' || e == 'u'
             || e == 'A' || e == 'E' || e == 'I' || e == 'O' || e == 'U')
-            println(e)
+        {vokal += e} else {kons += e}
     }
-    for (f in b){
-        if ( f == 'a'  || f == 'e' || f == 'i' || f == 'o' || f == 'u'
-            || f == 'A'  || f == 'E' || f == 'I' || f == 'O' || f == 'U' )
-        {
-            print("")}else{
-            println(f)}
+    var gabung = vokal + kons
+    for (f in gabung){
+    println(f)
     }
 
 }
